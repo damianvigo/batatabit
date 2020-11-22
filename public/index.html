@@ -2,17 +2,17 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Web Page Cryptocurrencies</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="../src/assets/styles/styles.css">
+  <link rel="stylesheet" href="../src/assets/styles/styles.css" />
 </head>
 
 <body>
   <header>
-    <img src="../src/assets/imgs/logo.svg" alt="">
+    <img src="../src/assets/imgs/logo.svg" alt="" />
     <div class="header__title-container">
       <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
       <p>Batabit te ayuda a navegar entre los diferentes precios y tendencias. </p>
@@ -20,7 +20,71 @@
     </div>
   </header>
   <main>
-    <section></section>
+    <section class="main-exchange-container">
+      <div class="backgroundImg"></div>
+      <div class="main-exchange-container__title">
+        <h2>Visibilizamos todas las tasas de cambio.</h2>
+        <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
+      </div>
+      <section class="main-tables-container">
+        <div class="main-currency-table">
+          <p class="main-currency-table--title">Monedas</p>
+          <div class="main-currency-table-container">
+            <table>
+              <tr>
+                <td class="table--top-left">Bitcoin</td>
+                <td class="table--top-right table--right">$1.96 <span class="down"></span></td>
+              </tr>
+              <tr>
+                <td>Ethereum</td>
+                <td class="table--right">$0.07 <span class="up"></span></td>
+              </tr>
+              <tr>
+                <td>Ripple</td>
+                <td class="table--right">$2.17 <span class="down"></span></td>
+              </tr>
+              <tr>
+                <td class="table--bottom-left">Stellar</td>
+                <td class="table--bottom-right table--right">$4.96 <span class="down"></span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="currency-table--date">
+          <p><b>Actualizado:</b>
+            <script> document.write(new Date().toLocaleString());</script>
+          </p>
+        </div>
+        <div class="main-commission-table">
+          <p class="main-commission-table--title">Comisiones</p>
+          <div class="commission-table--container">
+            <table>
+              <tr>
+                <td class="table--top-left">Bitcoin</td>
+                <td class="table--top-right table--right">$1.96 <span class="down"></span></td>
+              </tr>
+              <tr>
+                <td>Ethereum</td>
+                <td class="table--right">$0.07 <span class="up"></span></td>
+              </tr>
+              <tr>
+                <td>Ripple</td>
+                <td class="table--right">$2.17 <span class="down"></span></td>
+              </tr>
+              <tr>
+                <td class="table--bottom-left">Stellar</td>
+                <td class="table--bottom-right table--right">$4.96 <span class="down"></span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="currency-table--date">
+          <p><b>Actualizado:</b>
+            <script> document.write(new Date().toLocaleString());</script>
+          </p>
+        </div>
+      </section>
+    </section>
     <section></section>
     <section></section>
     <section></section>
