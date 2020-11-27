@@ -32,6 +32,7 @@
 html {
   font-size: 62.5%;
   font-family: var(--font-sans);
+  scroll-behavior: smooth;
 }
 
 header {
@@ -135,6 +136,8 @@ main {
   height: auto;
   background-color: var(--off-white);
 }
+
+/* Intercambios */
 
 .main-exchange-container {
   width: 100%;
@@ -299,6 +302,8 @@ main {
   color: var(--warm-black);
 }
 
+/* Beneficios */
+
 .main-product-detail {
   position: relative;
   width: 100%;
@@ -346,7 +351,7 @@ main {
   width: 90%;
   min-width: 288px;
   max-width: 400px;
-  height: 150px;
+  min-height: 150px;
   margin: 1.5rem auto;
   padding: 1.5rem;
   background-color: var(--black);
@@ -393,4 +398,156 @@ main {
 
 .circle {
   background-image: url('../icons/check-circle.svg');
+}
+
+.bitcoin-img-container {
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  background-image: url('../imgs/bitcoinbaby2x.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.bitcoin-img-container h2 {
+  padding-top: 6rem;
+  font-size: 2.4rem;
+  font-weight: var(--size-700);
+  color: var(--just-white);
+}
+
+/* Planes */
+
+.main-plans-container {
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 7rem;
+  text-align: center;
+}
+
+.plans__title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.plans__title h2 {
+  padding-top: 5rem;
+  font-size: 2.4rem;
+  font-weight: var(--size-700);
+  line-height: 2.6rem;
+  color: var(--black);
+}
+
+.plans__title p {
+  padding-top: 3rem;
+  font-size: 1.4rem;
+  font-weight: var(--size-500);
+  line-height: 1.8rem;
+  color: #757575;
+}
+
+.plans-container__card {
+  position: relative;
+  width: 70%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 5rem auto 0;
+  padding: 0 1.5rem;
+  background-color: var(--just-white);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.recommended, .basic, .ultra-pro {
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  padding: .6rem;
+  top: -15px;
+  left: calc(50% - 60px);
+  font-size: 1.2rem;
+  border-radius: 8px;
+  color: var(--just-white);
+}
+
+.recommended {
+  background-color: var(--bitcoin-orange);
+}
+
+.basic {
+    background-color: cornflowerblue;
+}
+
+.ultra-pro {
+    background-color: goldenrod;
+}
+
+.plan-cards__title {
+  padding-top: 3rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: black;
+}
+
+.plan-cards__price {
+  position: relative;
+  padding: .5rem 0px;
+  font-size: 5.2rem;
+  font-weight: var(--size-700);
+  letter-spacing: -5px;
+}
+
+.plan-cards__price span {
+  position: relative;
+  top: -30px;
+  left: 0;
+  font-size: 1.2rem;
+  font-weight: var(--size-300);
+}
+
+.plan-cards__saving {
+  font-size: 1.2rem;
+  color: #757575;
+}
+
+.plan-cards--cta {
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background-color: #faf8f7;
+  border-radius: 4px;
+  font-family: var(--font-sans);
+  font-size: 1.4rem;
+  font-weight: var(--size-700);
+  line-height: 1.8rem;
+  color: var(--black);
+  cursor: pointer;
+  outline: none;
+}
+
+.plan-cards--cta span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../icons/orange-right-arrow.svg');
+  vertical-align: text-bottom;
+}
+
+.plan-cards--cta.ultra {
+  border: 2px solid goldenrod
+}
+
+.plan-cards--cta.recommended-border {
+  border: 2px solid var(--bitcoin-orange);
+}
+
+.plan-cards--cta.basic-border {
+  border: 2px solid cornflowerblue;
 }
